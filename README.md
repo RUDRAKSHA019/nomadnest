@@ -1,2 +1,2 @@
 # nomadnest
-A community site to connect travelers and backpackers
+A socialmedia site to connect travelers and backpackers
