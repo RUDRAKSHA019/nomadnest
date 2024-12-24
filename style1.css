@@ -1,0 +1,160 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2e8b57;
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    color: white;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1600x600') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #ff6600;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Featured Section */
+.featured {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.featured .container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.featured .feature {
+    width: 30%;
+    text-align: center;
+}
+
+.featured .feature h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.featured .feature p {
+    font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+    background-color: #2e8b57;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-media li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media li a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .featured .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .hero-text h2 {
+        font-size: 2.5em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+}
